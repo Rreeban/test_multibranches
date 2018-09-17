@@ -1,7 +1,7 @@
 pipeline {
 
   agent {
-    label 'windows'
+    label 'Linux'
   }
 
   stages {
@@ -9,7 +9,7 @@ pipeline {
     stage ('execute') {
 
       steps {
-	      powershell '.\\rondoudou.ps1'
+	      sh './rondoudou.sh'
       }
 
     }
