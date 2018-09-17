@@ -1,4 +1,4 @@
-!#bin/bash
+#!/bin/bash
 echo "Bonjour il est `date`" > /home/jenkins/bonjour.txt
 
 #$date = Get-Date
